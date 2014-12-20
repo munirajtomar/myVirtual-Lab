@@ -1,0 +1,77 @@
+{
+    "lab": {
+      "description": {
+            "id": "01",
+            "name": "Muniraj Tomar",
+            "discipline": [""],
+            "status": "",
+            "type": "",
+            "integration_level": 0,
+            "server-side": true,
+            "developer": [
+                {
+                    "contact": {
+                        "email": "muniraj.tomar91@gmail.com",
+                        "alternate_email": "",
+                        "mobile_number": "",
+                        "office_number": ""
+                    },
+                    "department": "",
+                    "institute": "",
+                    "name": "",
+                    "organization": "",
+                    "role": "",
+                    "title": "",
+                    "web": ""
+                }
+            ]
+        },
+        "build_requirements": {
+            "platform": {
+                "arch": "",
+                "build_steps": {
+                    "build": ["make -C ../src"],
+                    "configure": [],
+                    "post_build": [],
+                    "pre_build": [],
+                    "status": []
+                },
+                "installer": [],
+                "os": "ubuntu",
+                "osVersion": "12",
+                "service_pack": ""
+            }
+        },
+        "runtime_requirements": {
+            "platform": {
+                "arch": "",
+                "hosting": "",
+                "installer": ["sudo apt-get update","sudo apt-get install -y apache2"],
+                "lab_actions": {
+                    "backup": [],
+                    "clean": [],
+                    "init": ["mv /var/www/index.html index.html.default","cp -r ../srv/* /var/www/"],
+                    "pause": [],
+                    "publish": [],
+                    "restore": ["restore"],
+                    "resume": [],
+                    "shutdown": ["service apache2 stop"],
+                    "start": ["service apache2 start"],
+                    "stats": [],
+                    "stop": []
+                },
+                "memory": {
+                    "max_required": "",
+                    "min_required": ""
+                },
+                "os": "ubuntu",
+                "osVersion": "12",
+                "servicepack": "",
+                "storage": {
+                    "min_required": ""
+                }
+            }
+        }
+    },
+    "template": "1.0"
+}
